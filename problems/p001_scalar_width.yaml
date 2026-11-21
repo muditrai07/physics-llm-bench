@@ -1,0 +1,16 @@
+
+id: p001
+category: decay
+statement: |
+  A real scalar of mass 125 GeV couples to a Dirac fermion of mass 4.18 GeV
+  through a Yukawa interaction with coupling y = 0.024. Compute the decay width
+  of the scalar into a fermion-antifermion pair, in MeV.
+  End your answer with a single line of the form "FINAL: <number> <unit>".
+answer:
+  value: 2.8455894655574694       # fill in: compute it with width_scalar_to_fermions
+  unit: MeV
+rel_tol: 0.02
+solution:
+  function: width_scalar_to_fermions
+  inputs: {m_phi: 125, m_f: 4.18, y: 0.024}
+  output_unit: GeV   # what the function returns
